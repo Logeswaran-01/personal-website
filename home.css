@@ -1,337 +1,616 @@
-*{
+body{
+   background: #fce4ec;
+   color: black;
+ 
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+   padding-top: 100px;
+
+
 }
-.title{
+.title-div{
     display: flex;
     flex-direction: row;
-    justify-content:  space-between;
-    align-items: center;
-    
-    width: 100%;
-    z-index: 999;
+    justify-content: space-between;
     left: 0;
     top: 0;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     
-    
+    z-index: 2000;
 }
-.title h1{
-    
-    margin-top: 0px;
-    margin-bottom: 10px;
-    color: hsl(0, 0%, 10%);
-    font-size: 35px;
-    font-weight: 500;
-    text-shadow: 1px 1px 1px hsl(0, 0%, 0%);
-    
-}
-.sub-title {
-    display: flex;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
 
+.title-div h1{
+    padding: 0px;
+    margin: 10px;
 }
-.sub-title a{
+
+.laptop{
+    padding: 10px;
+}
+.title-div a{
     text-decoration: none;
+    padding: 10px;
+    color: hsl(0, 0%, 25%);
     cursor: pointer;
     
 }
-.sub-title a:hover{
+
+.title-div a:hover{
     text-decoration: underline;
 }
-.sub-title p{
-    gap: 10px;
-    padding: 5px;
-    margin-top: 0px;
-    padding-top: 0px;
+
+.title-div div{
+    padding-top: 10px;
+    margin-top: 8px;
 }
-.toggle{
-    color: hsl(0, 0%, 50%);
+
+#toggle{
+    color: hsl(0, 0%, 0%);
     font-size: 20px;
-    display: none;
-}
-.mobile-phone{
-    background-color: hsla(240, 100%, 10%);
+    right: 0;
     top: 0;
-    width: 50%;
-    height: 100%;
-    padding-left: 10px;
+    cursor: pointer;
+    display: none;
+
+}
+
+#toggle:hover{
+    background-color: hsl(340, 80%, 85%);
+}
+
+
+.mobile-phone{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
     position: fixed;
+    top: 0;
+    height: 100%;
+    text-decoration: none;
+    cursor: pointer;
     left: -60%;
     transition: 1s;
+    background-color: hsl(340, 70%, 80%);
 }
 
-.home{
-    text-decoration: none;
-    cursor: pointer;
+
+.sub-mobile {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    
 }
-.home:hover{
+
+.sub-mobile a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.sub-mobile a:hover{
     text-decoration: underline;
 }
-.mobile-phone div{
-    margin-top: 50px;
 
-}
 #cancel-toggle{
     display: flex;
     justify-content: end;
-    padding: 5px;
+    padding:10px;
     font-size: 20px;
+    cursor: pointer;
 }
-@media screen and (max-width:600px) {
-     .toggle{
-         display: block;
-     }
-     .sub-title{
+
+#cancel-toggle:hover{
+    text-decoration: underline;
+}
+
+
+
+@media  screen and (max-width: 600px) {
+    .laptop{
         display: none;
-     }
-     .image1{
-        display: none;
-     }
-     .quotes{
-        flex-direction: column;
-     }
-     .quotes div{
-        width: 99%;
-        gap: 0%;
-        height: 100%;
-     }
-     .new-arrivals{
-        flex-direction: column;
-        gap: 20px;
-        
-     }
-     .new-arrivals img{
-        border-radius: 10px;
-        width: 100%;
-     }
-     .b1{
-    border-radius: 5px;
-    margin-left: 50px;
-    border: none;
-    background-color: black;
-    color: white ;
-    font-size: 15px;
     }
-    .b2{
+
+    #toggle{
+        display: block;
+        padding: 20px;
+    }
+
+     .profile{
+        margin-left: 80px;
+     }
+
+    .loges-pic{
+       padding: 20px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       border: 1.5px solid hsl(0, 0%, 70%);
+       box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+       border-radius: 10px;
+       width: 80%;
+       
+
+    }
+    .about{
+        font-size: 23px;
+        text-align: center;
+        
+    }
+
+    .about h4{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .about h2{
+        margin:2px;
+    }
+
+    .about p{
+         margin-bottom: 0%;
+         padding-bottom: 0%;
+    }
+   .skill{
+    padding: 20px;
+    gap: 20px;
+   }
+   
+   .skill1{
+    border: 0.5px solid hsl(0, 0%, 70%);
+    padding-top: 0px;
+    padding-left: 50px;
+    margin-bottom: 40px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+   }
+
+   .skill1 ol{
+    padding-left: 70px;
+   }
+   
+   .skill2{
+    border: 0.5px solid hsl(0, 0%, 70%);
+    padding-top: 10px;
+    padding-left: 50px;
+    margin-bottom: 40px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+   }
+   
+   .skill2 ol{
+    padding-left: 70px;
+   }
+   
+   .skill3{
+    border: 0.5px solid hsl(0, 0%, 70%);
+    padding-top: 10px;
+    margin-bottom: 40px;
+    padding-left: 50px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+   }
+   
+   .skill3 ol{
+    padding-left: 70px;
+   }
+
+    .skill4{
+    border: 0.5px solid hsl(0, 0%, 70%);
+    padding-top: 10px;
+    padding-left: 50px;
+    margin-bottom: 40px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+   }
+   
+   .skill4 ol{
+    padding-left: 70px;
+   }
+
+   .resume a{
+    padding-left: 200px;
+   }
+
+   .toggle-icons{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+   }
+
+    .contact label{
+       font-size: 20px;
+       padding-left: 20px;
+       margin-bottom: 20px;
+    }
+
+    .input-contact{
+        margin-left: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+
         border-radius: 5px;
-        background-color: black;
-        color: white ;
+        border: 0.1 solid hsl(0, 0%, 50%);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        
+   }
+
+    .input-contact::placeholder{
+        font-size: 17px;
+    }
+
+    .input-contact1{
+        margin-left: 100px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 0.1 solid hsl(0, 0%, 50%);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        padding: 20px;
+    }
+
+    .input-contact1::placeholder{
+        padding: 0px;
+        font-size: 13.5px;
+        margin-top: 0px;
+        font-family: "Poppins",sans-serif;
+    }
+
+    .contact button{
+        margin-left: 270px;
+        padding: 10px;
+        margin-bottom: 30px;
+        background-color: #27f900;
+        border: none;
+        cursor: pointer;
         font-size: 15px;
-        
-        border: none;
-    }
-    .b3{
         border-radius: 5px;
-        background-color: black;
-        color: white ;
-         font-size: 15px;
-        margin-left: 0px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+
+    .contact button:hover{
+        background-color: hsl(111, 100%, 70%);
+    }
+    
+    .whole-quote{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(0, 0%, 87%);
+        margin: 10px;
+        padding: 5px;
+        gap: 15px;
+        border-radius: 10px;
+        
+    }
+
+    .quote-author{
+        display: flex;
+        justify-content: end;
+    }
+
+    .nav-btn{
+        font-size: 20px;
+        cursor: pointer;
         border: none;
-     }
-.b4{
-    border-radius: 5px;
-    background-color: black;
-    color: white ;
-    font-size: 15px;
+        background-color: hsl(220, 60%, 80%);
+        border-radius: 50%;
+
+    }
+
+    .nav-btn:hover{
+         background-color: hsl(220, 60%, 90%);
+    }
+
+    .load img{
+    width: 35%;
     
-    border: none;
-    margin-bottom: 5px;
+    animation: pulse 1s infinite ease-in-out;
 }
 
-.div{
-   padding-left: 90px;
-
 }
-.div1 button{
-         
-    margin-left: 65px;
+
+
     
-}
 
-.div1{
-   padding-left: 130px;
-}
-
-.div2 button{
-         
-    margin-left: 65px;
-    
-}
-
-.div2{
-   padding-left: 130px;
-}
-.div3{
-    padding-left: 100px;
-
-}
-.toggle-icons{
-    display: flex;
-    flex-direction: column;
-    
-}
-}
-/* header */
-.whole-header{
-    display: flex;
-    justify-content: center;
-}
-.header{
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-}
-.header h1{
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-}
-.header p{
-    padding-top: 0%;
-    margin-top: 20px;
-}
-.image1{
-    border-radius: 20px;
-    margin: 20px;
-    
-}
-.whole-header{
+@media screen and (min-width: 601px) {
+    .laptop{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding-left: 30px;
+    }
+    .loges-pic{
     display: flex;
     flex-direction: row;
-
-
-}
-
-.start-btn{
-    border-radius: 5px;
-    border: none;
-    padding: 5px;
-    margin: 0%;
-    color: white;
-    background-color: black;
-    
-
-}
-.para{
-    display: flex;
-    justify-content: space-between;
-}
-.quotes{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-
-}
-.quotes div{
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
     padding: 10px;
-    margin: 10px;
-    background-color: hsl(0, 0%, 90%);
+   
+   }
+
+   .about{
+    font-size: 20px;
+    padding-left: 70px;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 30px;
+    margin-left: 30px;
+
+   }
+   .about p{
+    padding-top: 0px;
+    margin-top: 10px;
+   }
+
+   .skill{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+   }
+
+   .skill1{
+    border: 0.5px solid hsl(0, 0%, 70%);
+    padding: 20px;
     border-radius: 10px;
-    
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+   }
+   
+    .skill2{
+    border: 0.5px solid hsl(0, 0%, 70%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+   }
 
+   .skill3{
+    border: 0.5px solid hsl(0, 0%, 70%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+   }
 
-    
-}
+    .skill4{
+    border: 0.5px solid hsl(0, 0%, 70%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+   }
 
-.quotes div h3{
-    color: hsl(0, 100%, 65%);
-    font-weight: bold;
-}
-
-.h1{
-    font-weight: 700;
-}
-.new-arrivals {
+   .resume a{
      display: flex;
      justify-content: center;
-     align-items: center;
-     gap: 10px;
-}
+   }
 
-.new-arrivals img{
-        border-radius: 10px;
-        width: 60%;
+   .contact label{
+       font-size: 25px;
+       padding-left: 400px;
+       margin-bottom: 20px;
        
+    }
+
+    .input-contact{
+        margin-left: 600px;
+        width: 30%;
+        font-size: 20px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 0.1 solid hsl(0, 0%, 50%);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        
+   }
+
+    .input-contact::placeholder{
+        font-size: 17px;
+    }
+
+    .input-contact1{
+        margin-left: 600px;
+        width: 30%;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 0.1 solid hsl(0, 0%, 50%);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        padding: 20px;
+    }
+
+    .input-contact1::placeholder{
+        padding: 0px;
+        font-size: 13.5px;
+        margin-top: 0px;
+        font-family: "Poppins",sans-serif;
+    }
+
+    .contact button{
+        margin-left: 1000px;
+        padding: 10px;
+        margin-bottom: 30px;
+        background-color: #27f900;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+
+    .contact button:hover{
+        background-color: hsl(111, 100%, 70%);
+    }
+    
+    .whole-quote{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: hsl(0, 0%, 87%);
+        margin: 10px;
+        
+        
+        gap: 15px;
+        border-radius: 10px;
+        
+    }
+
+    .quote-author{
+        display: flex;
+        justify-content: end;
+        font-size: 20px;
+    }
+
+    .quote-text{
+        font-size: 23px;
+    }
+
+    .nav-btn{
+        font-size: 30px;
+        cursor: pointer;
+        border: none;
+        background-color: hsl(220, 60%, 80%);
+        border-radius: 50%;
+        padding: 10px;
+        margin: 50px;
+
+    }
+
+    .nav-btn:hover{
+         background-color: hsl(220, 60%, 90%);
+    }
+
+    .load img{
+    width: 200px;
+    
+    animation: pulse 1s infinite ease-in-out;
 }
-.b1{
-    border-radius: 5px;
-    background-color: black;
-    color: white ;
-    font-size: 15px;
-    border: none;
-    margin-left: 30px;
-}
-.b2{
-    border-radius: 5px;
-    background-color: black;
-    color: white ;
-    font-size: 15px;
-    border: none;
-    margin-left: 80px;
+    
 }
 
-.b3{
-    border-radius: 5px;
-    background-color: black;
-    color: white ;
-    font-size: 15px;
-    border: none;
-    margin-right: 50px;
-    margin-left: 80px;
+.whole{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+     background: hsl(340, 80%, 94%);
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+
+}
+.profile-img{
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    width: 200px;
+    height: 200px;
+    
+    
+}
+ 
+.line{
+   margin: 50px;
 }
 
-.b4{
-    border-radius: 5px;
-    background-color: black;
-    color: white ;
+.education{
+    background-color: hsl(340, 80%, 94%) ;
+}
+
+.resume button{
+    text-align: center;
+    margin-left: 150px;
+    padding: 10px;
+    background-color: #27f900;
+    border-radius: 10px;
+    cursor: pointer;
     font-size: 15px;
-    border: none;
-    margin-left: 50px;
+}
+
+.click:hover{
+    background-color: hsl(111, 100%, 70%);
+
+}
+
+.resume a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.resume a:hover{
+    text-decoration: underline;
 }
 
 .contact{
-    background-color: hsla(240, 100%, 10%);
-    color: white;
-    
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    left: -10;
-    right: -10;
-    bottom: -10;
-}
-.h4{
-    padding: 0px;
-    margin: 0px;
-    color: antiquewhite;
-}
-.h4-p{
-    padding: 0px;
-    margin: 0px;
-    color: antiquewhite;
-}
-.toggle-icons{
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
+    background-color: hsl(350, 100%, 83%);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
-.about{
-    background-color: hsl(0, 0%, 95%);
-    border-radius: 20px;
+.about-page{
+    border: 0.1px solid hsl(0, 0%, 50%);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     padding: 10px;
-    display: fixed;
-    height: 100%;
+    border-radius: 10px;
+}
+
+.project a{
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.project a:hover{
+    text-decoration: underline;
+}
+
+.project p{
+    margin-left: 10px;
+}
+
+.quote-text .quote-author{
+    transition: opacity 0.5 ease;
+    opacity: 1;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.load{
     width: 100%;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fce4ec;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 100%;
+
+}
+
+
+
+.load h3{
+    font-size: 20px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+@keyframes pulse{
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
 }

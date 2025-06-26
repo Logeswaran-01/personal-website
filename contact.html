@@ -3,64 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>StyleGrove</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <link rel="stylesheet" href="home.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Logeswaran</title>
 </head>
 <body>
-    <div class="title">
-        <h1>StyleGrove</h1>
-        <nav class="sub-title"><p><a href="index.html">Home</a></p>
-        <p><a href="collection.html">Collections</a></p>
-        <p><a href="about.html">About Us</a></p>
-        <p><a href="contact.html">Contact</a></p>
-
-        </nav>
-        <div class="toggle">
-            <i class="fa-solid fa-bars" id="menu-toggle" onclick="show()"></i>
-        </div>
+    <div>
         
-     
-
     </div>
-    <div class="mobile-phone">
-        <i class="fa-solid fa-xmark" onclick="hide()" id="cancel-toggle" style="color: rgb(240, 248, 255);"></i>
-        <div>
-            <p><a href="index.html" class="home" style="color: rgb(240, 248, 255);">Home</a></p>
-            <p><a href="collection.html" class="home" style="color: rgb(240, 248, 255);">Collections</a></p>
-            <p><a href="about.html"  class="home"style="color: rgb(240, 248, 255);">About Us</a></p>
-            <p><a href="contact.html"  class="home"style="color: rgb(240, 248, 255);">Contact</a></p>
-        </div>
+    <div class="whole">
+        <div class="title">
+       <div class="title-div">
+        <h1>LOGESWARAN</h1>
+       
+       <nav class="laptop" style="padding-left: 20px;">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
         
-
+        <a href="projects.html">Project</a>
+        <a href="contact.html">Contact</a>
+       
         
-        </div>
+       </nav>
+       
       
-        <div class="contact">
-            <div>
-                <h3>Contact Us</h3>
-                
-                
-            </div>
-            <div>
-                <h4 class="h4">StyleGrove</h4>
-                <p class="h4-p">Shop smart, shine bright 🧠💫</p>
-            </div>
-            <div class="toggle-icons">
-               
-                <p><i class="fa-brands fa-instagram"></i> StyleGrove_shop</p> 
-                <p><i class="fa-brands fa-whatsapp"></i> +91 7603805694</p> 
-                <p><i class="fa-regular fa-envelope"></i> StyleGrove_shop@gmail.com</p> 
-                 <p><i class="fa-brands fa-youtube"></i> StyleGrove_shop</p> 
-            </div>
+        <i class="fa-solid fa-bars" id="toggle" onclick="show()"></i>
         </div>
+       
 
-         
+
+       </div>
+    <div class="mobile">
+        
+        <div class="mobile-phone">
+            <i class="fa-solid fa-xmark"  id="cancel-toggle" style="color: black" onclick="hide()"></i>
+       <div class="sub-mobile">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+       
+       </div>
+        
+        
+       </div>
+       
+    </div>  
+     
+    
+    </div>
+    
+    </div>
+ 
+    <div class="contact">
+       <h2>CONTACT</h2>
+       <form action="https://api.web3forms.com/submit" method="POST">
+        <input class="input-contact" type="hidden" name="access_key" value="1a5d3c3f-dd32-4de3-bb3a-e355e1ad7b93">
+        <label >NAME :</label><br>
+        <input class="input-contact" type="text" placeholder="Enter Your Name" name="name" required>
+        <br><br>
+        <label for="">EMAIL : </label><br>
+        <input class="input-contact" type="email" name="email" placeholder="Enter your Email Id" required>
+        <br><br>
+        <label for="">MESSAGE :</label><br>
+        <textarea class="input-contact1" name="message" placeholder="ENTER YOUR MESSAGE" ></textarea><br><br>
+        <button type="submit">SUBMIT</button>
+       </form>
+        </div>
+        
+    
 </body>
-   <script src="contact.js"></script>
+<script src="home.js"></script>
 </html>
