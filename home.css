@@ -123,8 +123,12 @@ body{
         margin-left: 80px;
      }
 
+     .education{
+        padding-left: 10px;
+     }
+
     .loges-pic{
-       padding: 20px;
+       padding: 40px;
        display: flex;
        flex-direction: column;
        justify-content: center;
@@ -257,7 +261,7 @@ body{
     }
 
     .contact button{
-        margin-left: 270px;
+        margin-left: 240px;
         padding: 10px;
         margin-bottom: 30px;
         background-color: #27f900;
@@ -548,6 +552,7 @@ body{
     background-color: hsl(350, 100%, 83%);
     padding: 10px;
     margin: 10px;
+    
     border-radius: 10px;
 }
 
@@ -613,4 +618,23 @@ body{
     50%{
         transform: scale(1.5);
     }
+}
+
+.container, .whole, .profile, .skill {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.skill {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill1, .skill2, .skill3, .skill4 {
+  flex: 1 1 200px; /* Responsive width */
 }
