@@ -113,6 +113,15 @@ body{
     .laptop{
         display: none;
     }
+    
+    .title-div h1{
+        font-size: 25px;
+        
+    }
+    .title-div{
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
 
     #toggle{
         display: block;
@@ -212,12 +221,16 @@ body{
     padding-left: 70px;
    }
 
-   .resume a{
-    padding-left: 200px;
-   }
+   .resume a {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+
+}
 
    .toggle-icons{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     gap: 10px;
    }
